@@ -6,7 +6,7 @@ const authorizeLoggedInUser = async (req, res, next) => {
 
     const verifiedToken = await verifySession(token);
 
-    if (!verifiedToken) throw new Error("Session invalid/expired");
+    // if (!verifiedToken) throw new Error("Session invalid/expired");
 
     req.token = verifiedToken.dataValues;
 
