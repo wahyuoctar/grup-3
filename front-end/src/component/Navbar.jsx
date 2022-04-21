@@ -57,7 +57,7 @@ const Navbar = () => {
               Logout
             </Button>
           ) : (
-            <Link href="/auth/login">
+            <Link href="/login">
               <Button colorScheme="teal">Login</Button>
             </Link>
           )}
